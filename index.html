@@ -1,0 +1,265 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>가회유음</title>
+
+    <style type="text/css">
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+
+            height: 75px;
+            padding: 1rem;
+            color: white;
+            background: rgba(255, 0, 0, 0);
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            background: linear-gradient(90deg, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+        }
+
+        ul, li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        #main-menu > li {
+            float: left;
+            position: relative;
+        }
+
+        #main-menu > li > a {
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.85);
+            text-align: center;
+            text-decoration: none;
+            letter-spacing: 0.05em;
+            display: block;
+            padding: 14px 36px;
+            border-right: 1px solid white;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+        }
+
+        #main-menu > li:nth-child(1) > a {
+            border-left: 1px solid white;
+        }
+
+        #sub-menu {
+            position: absolute;
+            background: rgba(53, 53, 53, 1.0);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.15s ease-in;
+            width: 270px;
+        }
+
+        #sub-menu > li {
+            padding: 16px 65px;
+            border-bottom: 1px solid white;
+        }
+
+        #sub-menu > li > a {
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.85);
+            /*text-align: center;*/
+            text-decoration: none;
+            letter-spacing: 0.05em;
+            /*display: block;*/
+            /*padding: 14px 36px;*/
+            /*border-right: 1px solid white;*/
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+        }
+
+        #main-menu > li:hover #sub-menu {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        #sub-menu > li > a:hover {
+            text-decoration: none;
+        }
+
+        .center {
+            text-align: center;
+            margin-top: 15%;
+        }
+
+        .main {
+            width: auto;
+            /*background: silver;*/
+            padding: 10px 0 0 5px;
+            margin: 15px 0 0 0;
+            height: 2000px;
+        }
+
+        .sub1 {
+            height: 300px;
+            margin-top: 10%;
+            border: 1px solid;
+            margin-left: 150px;
+            width: 25%;
+            /*box-sizing: 50;*/
+            display: inline-block;
+            background-image: url(img/beer.jpg);
+            background-size: cover;
+        }
+
+        .sub2 {
+            height: 300px;
+            margin-top: 10%;
+            border: 1px solid;
+            margin-left: 75px;
+            width: 25%;
+            /*box-sizing: 50;*/
+            display: inline-block;
+            background-image: url(img/pub.jpg);
+            background-size: cover;
+        }
+
+        .sub3 {
+            height: 300px;
+            margin-top: 10%;
+            border: 1px solid;
+            margin-left: 75px;
+            width: 25%;
+            /*box-sizing: 50;*/
+            display: inline-block;
+            background-image: url(img/hangover.jpg);
+            background-size: cover;
+        }
+
+        .bg {
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 100%;
+            height: 976px;
+            position: absolute;
+            top: 60px;
+            margin-top: -60px;
+        }
+        .down {
+            background-color: rgba(53, 53, 53, 1.0);
+        }
+        .sub-text {
+            height: 80px;
+            margin-top: -5px;
+            border: 1px solid;
+            margin-left: 150px;
+            width: 25%;
+            display: inline-block;
+        }
+
+        .sub-text2 {
+            height: 80px;
+            margin-top: -5px;
+            border: 1px solid;
+            margin-left: 75px;
+            width: 25%;
+            display: inline-block;
+        }
+
+        .sub-text3 {
+            height: 80px;
+            margin-top: -5px;
+            border: 1px solid;
+            margin-left: 75px;
+            width: 25%;
+            display: inline-block;
+        }
+    </style>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.js"></script>
+    <script>
+        $(function (){
+            var hdr = $('header');
+            var start = $('.section-start');
+            var startOffsetTop = start.offset().top;
+            $(window).resize(function () {
+                startOffsetTop = start.offset().top;
+            });
+
+            $(window).on('scroll', function () {
+                if($(window).scrollTop() >= startOffsetTop) {
+                    hdr.addClass('down');
+                } else {
+                    hdr.removeClass('down');
+                }
+            });
+        });
+    </script>
+
+</head>
+
+<body style="margin-bottom: -5px;">
+
+<header style="border-bottom: 1px solid white; z-index: 3;">
+
+    <h1><a href="#" style="color: white; text-decoration: none; margin-left: 60px;">佳會愉飮</a></h1>
+
+    <ul id="main-menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Alcoholic Beverages</a></li>
+        <li><a href="#">Introduction Of Developers</a>
+            <ul id="sub-menu">
+                <li><a href="#" aria-label="subemnu">Shim Seoung Min</a></li>
+                <li><a href="#" aria-label="subemnu">Lee Ji Heon</a></li>
+                <li><a href="#" aria-label="subemnu">Choi Sung Won</a></li>
+            </ul>
+        </li>
+    </ul>
+
+</header>
+
+<main style="margin: -10px -8px 0 -14px;">
+
+    <div class="main">
+        <div class="bg" style="position: absolute; z-index: 1;"></div>
+        <div style="width: 100%; height: 1270px; background-color: #0d95e8; margin-top: -310px; background-image: url(img/main_img.jpg); background-size: 100% 1270px;">
+            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, 200px); z-index: 2;">
+                <h1 class="center"
+                        style="font-size: 2.5em; color: white;">Let’s have a nice drink at a beautiful gathering</h1>
+            </div>
+        </div>
+        <div class="section-start">
+            <div class="sub1" onclick="location.href='#';"></div>
+
+            <div class="sub2" onclick="location.href='#';"></div>
+
+            <div class="sub3" onclick="location.href='#';"></div>
+        </div>
+        <div>
+            <div class="sub-text">
+                <h2 style="text-align: center;">Information on alcohol</h2>
+            </div>
+            <div class="sub-text2">
+                <h2 style="text-align: center;">Impressive Pub Review</h2>
+            </div>
+            <div class="sub-text3">
+                <h2 style="text-align: center;">How to relieve hangover</h2>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<footer style="padding-top: 3rem; padding-bottom: 3rem; background-color: rgba(53, 53, 53, 1.0); margin: 0 -8px 0 -14px;">
+    <div>
+        <p style="text-align: center; color: white;">Copyright 2020. Seoungmin-Shim, Jiheon-Lee, Sungwon-Choi. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+
+</html>
