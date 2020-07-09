@@ -1,0 +1,46 @@
+.title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+body {
+    background-color: rgba(47, 138, 241, 0.1);
+    overflow-x: hidden;
+}
+
+table {
+    margin-left:auto;
+    margin-right:auto;
+    table-layout: fixed;
+    word-break: break-all;
+    position: absolute;
+}
+
+caption {
+    margin-left: 50px;
+}
+
+table td {
+    width: 150px;
+}
+
+div {
+    width: 100%;
+    cursor: pointer;
+}
+
+div:hover {
+    background-color: #D8D8D8;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: gray;
+}
+
+a:visited {
+    color: cornflowerblue;
+}
