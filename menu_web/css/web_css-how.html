@@ -1,0 +1,195 @@
+<!DOCTYPE HTML>
+<html>
+
+  <head>
+    <title>web-contents</title>
+
+    <link rel="stylesheet" type="text/css" href="../../css/contents.css">
+
+  </head>
+
+  <body>
+
+    <header>
+      <p><h1>CSS-How To Add CSS</h1><p>
+    </header>
+
+    <br><hr><br>
+
+    <section>
+      <p style="text-align: center;">
+        When a browser reads a style sheet, it will format the HTML document according to the information in the style sheet.</p>
+    </section>
+
+    <br><hr><br>
+
+      <section>
+        <p class="strapline">Three Ways to Insert CSS</p>
+        There are three ways of inserting a style sheet:
+        <ul>
+          <li>External CSS</li>
+          <li>Internal CSS</li>
+          <li>Inline CSS</li>
+        </ul>
+      </section>
+
+      <br><hr><br>
+
+      <section>
+        <p class="strapline">External CSS</p>
+        CSS is used to define styles for your web pages, including the design, layout and variations in display for different devices and screen sizes.
+        <div class="example_out">
+          <h3>Example</h3>
+          External styles are defined within the &lt;link&lt; element, inside the &lt;head&lt; section of an HTML page:
+          <div class="example_inner">
+                	&lt;head&gt;<br>
+                    &lt;link rel="stylesheet" type="text/css" href="style.css"&gt;<br>
+                	&lt;/head&gt;<br>
+                	&lt;body&gt;<br>
+                  <br>
+                  	&lt;h1&gt;This is a heading.&lt;/h1&gt;<br>
+                    &lt;p&gt;This is a paragraph.&lt;/p&gt;<br>
+                  <br>
+                  &lt;/body&gt;<br>
+            </div>
+            <br>
+          </div><br>
+              An external style sheet can be written in any text editor, and must be saved with a .css extension.<br>
+              The external .css file should not contain any HTML tags.<br>
+              Here is how the "style.css" file looks like:<br>
+              <br>
+              <div class="example_out">
+                <h3>"style.css"</h3>
+                <div class="example_inner">
+                    body {<br>
+                      background-color: lightblue;<br>
+                    }<br>
+                    h1 {<br>
+                      color: navy;<br>
+                      margin-left: 20px;<br>
+                    }<br>
+                </div>
+                <br>
+              </div>
+              <p class="note"><strong>NOTE</strong>:Do not add a space between the property value and the unit (such as margin-left: 20 px;). The correct way is: margin-left: 20px;</p>
+        </section>
+
+        <br><hr><br>
+
+        <section>
+          <p class="strapline">Internal CSS</p>
+          An internal style sheet may be used if one single HTML page has a unique style.<br>
+          The internal style is defined inside the &lt;style&gt; element, inside the head section.
+          <div class="example_out">
+            <h3>Example</h3>
+            Internal styles are defined within the &lt;style&gt; element, inside the	&lt;head&gt; section of an HTML page:
+            <div class="example_inner">
+                  	&lt;head&gt;<br>
+                      &lt;style&gt;<br>
+                      body {<br>
+                        background-color: lightblue;<br>
+                      }<br>
+                      h1 {<br>
+                        color: navy;<br>
+                        margin-left: 20px;<br>
+                      }<br>
+                      &lt;/style&gt;
+                  	&lt;/head&gt;<br>
+                  	&lt;body&gt;<br>
+                    <br>
+                    	&lt;h1&gt;This is a heading.&lt;/h1&gt;<br>
+                      &lt;p&gt;This is a paragraph.&lt;/p&gt;<br>
+                    <br>
+                    &lt;/body&gt;<br>
+              </div>
+              <br>
+            </div>
+        </section>
+
+        <br><hr><br>
+
+        <section>
+          <p calss="strapline">Inline CSS</p>
+          An inline style may be used to apply a unique style for a single element.<br>
+          To use inline styles, add the style attribute to the relevant element. The style attribute can contain any CSS property.
+          <div class="example_out">
+            <h3>Example</h3>
+            Inline styles are defined within the "style" attribute of the relevant element:
+            <div class="example_inner">
+              &lt;body&gt;<br>
+              <br>
+                &lt;h1 style="color:blue;text-align:center;"&gt;This is a heading.&lt;/h1&gt;<br>
+                &lt;p style="color:red;"&gt;This is a paragraph.&lt;/p&gt;<br>
+              <br>
+              &lt;/body&gt;<br>
+              </div>
+              <br>
+            </div>
+            <p class="note"><strong>TIP</strong>:An inline style loses many of the advantages of a style sheet (by mixing content with presentation). Use this method sparingly.</p>
+        </section>
+
+        <br><hr><br>
+
+        <section>
+          <p class="strapline">Multiple Style Sheets</p>
+          If some properties have been defined for the same selector (element) in different style sheets, the value from the last read style sheet will be used.
+          <div class="example_out">
+            <h3>Example</h3>
+            If the internal style is defined after the link to the external style sheet, the &lt;h1&gt; elements will be "red":
+            <div class="example_inner">
+                  	&lt;head&gt;<br>
+                      &lt;link rel="stylesheet" type="text/css" href="mystyle.css"&gt;<br>
+                      &lt;style&gt;<br>
+                      h1 {<br>
+                        color: red;<br>
+                      }<br>
+                    &lt;/style&gt;<br>
+                  &lt;/head&gt;<br>
+                  &lt;body&gt;<br>
+                  <br>
+                    &lt;h1&gt;This is a heading&lt;/h1&gt;<br>
+                    &lt;p&gt;The style of this document is a combination of an external stylesheet, and internal style&lt;/p&gt;<br>
+                    <br>
+                  &lt;/body&gt;<br>
+              </div>
+              <br>
+            </div><br>
+            <img class="contents-img"src="img/howto-red.png"></img>
+
+            <br><br><br>
+
+            <div class="example_out">
+              <h3>Example</h3>
+              However, if the internal style is defined before the link to the external style sheet, the &lt;h1&gt; elements will be "navy":
+              <div class="example_inner">
+                    	&lt;head&gt;<br>
+                        &lt;style&gt;<br>
+                        h1 {<br>
+                          color: red;<br>
+                        }<br>
+                      &lt;/style&gt;<br>
+                      &lt;link rel="stylesheet" type="text/css" href="mystyle.css"&gt;<br>
+                    &lt;/head&gt;<br>
+                    &lt;body&gt;<br>
+                    <br>
+                      &lt;h1&gt;This is a heading&lt;/h1&gt;<br>
+                      &lt;p&gt;The style of this document is a combination of an external stylesheet, and internal style&lt;/p&gt;<br>
+                      <br>
+                    &lt;/body&gt;<br>
+                </div>
+                <br>
+              </div><br>
+              <img class="contents-img" src="img/howto-navy.png"></img>
+        </section>
+
+      <br><br>
+
+    <footer>
+      <div>
+          <p>Copyright 2020. Seoungmin-Shim, Jiheon-Lee, Sungwon-Choi. All rights reserved.</p>
+      </div>
+    </footer>
+
+
+  </body>
+</html>

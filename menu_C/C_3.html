@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>C_3 page</title>
+
+        <link rel="stylesheet" type="text/css" href="../css/contents_c.css">
+        
+    </head>
+    <body>
+        <div>
+            <h2 align="center" id="hd">scanf and lecture</h2>
+            <hr>
+            <h3>scanf and lecture</h3>
+            <pre style="font-size: 20px;">
+                #include &lt;stdio.h>
+
+                int main ( )
+                {
+                int num1, num2, num3;
+
+                printf (“\n Please type an integer: \n”);
+                scanf (“%d”, &num1); /* read an integer */
+                printf (“\n Please type another integer: \n”);
+                scanf (“%d”, &num2);
+
+                num3 = num1 + num2;
+
+                printf (“result = %d”, num3);
+                }
+            </pre>
+            <h3>-explain-</h3>
+            <ol>
+                <li>
+                    int
+                </li>
+                <ul>
+                    <li>
+                        One of Data type
+                    </li>
+                    <li>
+                        'int' is integer data type
+                    </li>
+                    <li>
+                        Data type : int, float, string etc..
+                    </li>
+                </ul>
+                <li>
+                    num1, num2, num3
+                </li>
+                <ul>
+                    <li>
+                        It is Variables
+                    </li>
+                    <li>
+                        Variable names can be set at will.
+                    </li>
+                </ul>
+                <li style="font-weight: bold;">
+                    Variable Name
+                </li>
+                <ul>
+                    <li>
+                        starts with an English letter or _
+                    </li>
+                    <li>
+                        followed by English letters, digits, or _<br> − upper case letter and lower case letter for the same letter are different.
+                    </li>
+                    <li>
+                        must Not be a C reserved word<br> − break, case, char, const, continue, do, double, else, float, for, if, int, return, switch, while,…
+                    </li>
+                    <li>
+                        should not be longer than 20 characters
+                    </li>
+                    <li>
+                        should be mnemonic
+                    </li>
+                </ul>
+                <li style="font-weight: bold;">
+                    ★ scanf( "%d", &num1 );
+                </li>
+                <ul>
+                    <li>
+                        Obtains a value from the user<br>− scanf uses standard input (usually keyboard)
+                    </li>
+                    <li>
+                        This scanf statement has two arguments <br>− %d - indicates that data should be a decimal integer<br> − &integer1 - location in memory to store variable<br> − & is confusing in beginning – for now, just remember to include it with the variable name in scanf statements
+                    </li>
+                    <li>
+                        When executing the program the user responds to the scanf statement by typing in a number, then pressing the enter (return) key
+                    </li>
+                    <li>
+                        should not be longer than 20 characters
+                    </li>
+                    <li>
+                        ★If there is an error, change scanf -> scanf_s.★
+                    </li>
+                </ul>
+                <li>
+                    num3 = num1 + num2
+                </li>
+                <ul>
+                    <li>
+                        It is Assignment
+                    </li>
+                    <li>
+                        num3 get num1 + num2;
+                    </li>
+                </ul>
+            </ol>
+            <hr>
+            <h2 id="last">Try to practice using it.</h2>
+        </div>
+
+        <footer>
+            <div>
+                <p>Copyright 2020. Seoungmin-Shim, Jiheon-Lee, Sungwon-Choi. All rights reserved.</p>
+            </div>
+        </footer>
+    </body>
+</html>

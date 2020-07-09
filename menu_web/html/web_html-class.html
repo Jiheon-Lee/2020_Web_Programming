@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<html>
+
+  <head>
+    <title>web-contents</title>
+
+    <link rel="stylesheet" type="text/css" href="../../css/contents.css">
+  </head>
+
+  <body>
+
+    <header>
+      <p><h1>HTML-The class Attribute</h1><p>
+    </header>
+
+    <br><hr><br>
+
+    <section>
+      <p style="text-align: center;">The HTML class attribute is used to specify a class for an HTML element.<br>
+        Multiple HTML elements can share the same class.</p>
+    </section>
+
+    <br><hr><br>
+
+    <section>
+      <p class="strapline">Using The class Attribute</p>
+      The class attribute is often used to point to a class name in a style sheet. It can also be used by a JavaScript to access and manipulate elements with the specific class name.<br>
+      In the following example we have three &lt;div&gt; elements with a class attribute with the value of "city". All of the three &lt;div&gt; elements will be styled equally according to the .city style definition in the head section:
+
+      <div class="example_out">
+        <h3>Example</h3>
+        <div class="example_inner">
+          &lt;head&gt;<br>
+            &lt;style&gt;<br>
+              .city{<br>
+                background-color: black;<br>
+                color: white;<br>
+                margin: 20px;<br>
+                padding: 20px;<br>
+              }<br>
+            &lt;/style&gt;<br>
+            &lt;/head&gt;<br>
+            <br>
+            &lt;body&gt;<br>
+            <br>
+              &lt;div class="city"&gt;<br>
+              &lt;/h1&gt;London&lt;/h1&gt;<br>
+            <br>
+              &lt;div class="city"&gt;<br>
+              &lt;/h1&gt;Seoul&lt;/h1&gt;<br>
+            <br>
+            &lt;/body&gt;<br>
+      </div>
+        <br>
+      </div><br>
+      <p class="note"><strong>TIP</strong>:The id attribute can be used on any HTML element.<br>
+        <strong>NOTE</strong>:The id value is case-sensitive.<br>
+        <strong>NOTE</strong>: The id value must contain at least one character, and must not contain whitespace (spaces, tabs, etc.).<p>
+    </section>
+
+    <br><hr><br>
+
+    <section>
+      <p class="strapline">Different Elements Can Share Same Class</p>
+      Different HTML elements can point to the same class name.
+      In the following example, both &lt;h2&gt; and &lt;p&gt; points to the "city" class and will share the same style:
+
+      <div class="example_out">
+        <h3>Example</h3>
+        <div class="example_inner">
+          &lt;head&gt;<br>
+            &lt;style&gt;<br>
+              .city{<br>
+                background-color: tomato;<br>
+                color: white;<br>
+                padding: 10px;<br>
+              }<br>
+            &lt;/style&gt;<br>
+            &lt;/head&gt;<br>
+            <br>
+            &lt;body&gt;<br>
+            <br>
+            &lt;h1 class="city"&gt;Seoul&lt;/h1&gt;<br>
+            &lt;p class="city"&gt;Seoul is capital of Korea.&lt;/p&gt;<br>
+            <br>
+            &lt;/body&gt;<br>
+      </div>
+        <br>
+      </div><br>
+      <p class="note"><strong>TIP</strong>:The class attribute can be used on any HTML element.<br>
+        <strong>NOTE</strong>:The class name is case sensitive!<br>
+        <strong>NOTE</strong>: The id value must contain at least one character, and must not contain whitespace (spaces, tabs, etc.).<p>
+    </section>
+
+    <br><hr><br>
+
+    <section>
+      <p class="strapline">Different Elements Can Share Same Class</p>
+      Different HTML elements can point to the same class name.
+      In the following example, both &lt;h2&gt; and &lt;p&gt; points to the "city" class and will share the same style:
+
+      <div class="example_out">
+        <h3>Example</h3>
+        <div class="example_inner">
+          &lt;head&gt;<br>
+            &lt;style&gt;<br>
+              .note{<br>
+                font-size: 120%;<br>
+                color: red;<br>
+              }<br>
+            &lt;/style&gt;<br>
+            &lt;/head&gt;<br>
+            <br>
+            &lt;body&gt;<br>
+            <br>
+            &lt;h1&gt;My &lt;span class="note"&gt;Important&lt;span&gt; Heading&lt;/h1&gt;<br>
+            &lt;p&gt;This is some &lt;span class="note"&gt;important&lt;/span&gt; text.&lt;/p&gt;<br>
+            <br>
+            &lt;/body&gt;<br>
+      </div>
+        <br>
+      </div><br>
+
+    <br><br>
+
+    <footer>
+      <div>
+          <p>Copyright 2020. Seoungmin-Shim, Jiheon-Lee, Sungwon-Choi. All rights reserved.</p>
+      </div>
+    </footer>
+
+
+  </body>
+</html>

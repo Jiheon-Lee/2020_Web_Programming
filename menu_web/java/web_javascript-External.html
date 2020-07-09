@@ -1,0 +1,148 @@
+<!DOCTYPE HTML>
+<html>
+
+  <head>
+    <title>web-contents</title>
+
+    <link rel="stylesheet" type="text/css" href="../../css/contents.css">
+
+  </head>
+
+  <body>
+
+    <header>
+      <p><h1>JavaScript-External</h1><p>
+    </header>
+
+    <br><hr><br>
+
+    <section>
+      <p class="strapline">Scripts can also be placed in external files:</p>
+      <div class="example_out">
+        <h3>External file: myScript.js</h3>
+        <div class="example_inner">
+            &function myFunction() {
+              document.getElementById("demo").innerHTML = "Paragraph changed.";
+            }
+        </div>
+          <br>
+        </div><br>
+        External scripts are practical when the same code is used in many different web pages.<br>
+        JavaScript files have the file extension .js.<br>
+        To use an external script, put the name of the script file in the src (source) attribute of a &lt;script&gt; tag:
+
+        <div class="example_out">
+          <h3>Example</h3>
+          <div class="example_inner">
+              &lt;body&gt;<br>
+              <br>
+              &lt;h2&gt;External JavaScript&lt;/h2&gt;<br>
+              <br>
+              &lt;p id="demo"&gt;A Paragraph&lt;/p&gt;<br>
+              <br>
+              &lt;button type="button" onclick="myFunction()"&gt;Try it&lt;/button&gt;<br>
+              <br>
+              &lt;p&gt;(myFunction is stored in an external file called "myScript.js")&lt;/p&gt;<br>
+              <br>
+              &lt;script src="myScript.js"&gt;&lt;/script&gt;<br>
+              <br>
+            &lt;/body&gt;<br>
+          </div>
+            <br>
+          </div><br>
+          You can place an external script reference in &lt;head&gt; or &lt;body&gt; as you like.
+          The script will behave as if it was located exactly where the &lt;script&gt; tag is located.
+          <p class="note">External scripts cannot contain &lt;script&gt; tags.</p>
+      </section>
+
+      <br><hr><br>
+
+      <section>
+        <p class="strapline">JavaScript Functions and Events</p>
+        A JavaScript function is a block of JavaScript code, that can be executed when "called" for.<br>
+        For example, a function can be called when an event occurs, like when the user clicks a button.
+        <p class="note">You will learn much more about functions and events in later chapters.</p>
+      </section>
+
+      <br><hr><br>
+
+      <section>
+        <p class="strapline">External JavaScript Advantages</p>
+        Placing scripts in external files has some advantages:
+        <ul>
+          <li>It separates HTML and code</li>
+          <li>It makes HTML and JavaScript easier to read and maintain</li>
+          <li>Cached JavaScript files can speed up page loads</li>
+        </ul>
+        To add several script files to one page  - use several script tags:
+
+        <div class="example_out">
+          <h3>Example</h3>
+          <div class="example_inner">
+            &lt;script src="myScript1.js"&gt;&lt;/script&gt;
+            &lt;script src="myScript2.js"&gt;&lt;/script&gt;
+          </div>
+            <br>
+          </div><br>
+        </section>
+
+        <br><hr><br>
+
+        <section>
+          <p class="strapline">External References</p>
+          External scripts can be referenced with a full URL or with a path relative to the current web page.<br>
+          This example uses a full URL to link to a script:
+
+          <div class="example_out">
+            <h3>Example</h3>
+            <div class="example_inner">
+              &lt;body&gt;<br>
+              <br>
+                &lt;h2&gt;External JavaScript&lt;/h2&gt; <br>
+                <br>
+                &lt;p id="demo"&gt;A Paragraph.&lt;/p&gt;<br>
+                <br>
+                &lt;button type="button" onclick="myFunction()"&gt;Try it&lt;/button&gt;<br>
+                <br>
+                &lt;p&gt;(myFunction is stored in an external file called "myScript.js")&lt;/p&gt;<br>
+                <br>
+                &lt;script src="https://www.w3schools.com/js/myScript.js"&gt;&lt;/script&gt;<br>
+                <br>
+              &lt;/body&gt;
+            </div>
+              <br>
+            </div><br>
+
+            This example uses a script located in a specified folder on the current web site:
+
+          <div class="example_out">
+            <h3>Example</h3>
+            <div class="example_inner">
+              &lt;script src="/js/myScript1.js"&gt;&lt;/script&gt;
+            </div>
+              <br>
+            </div><br>
+
+            This example links to a script located in the same folder as the current page:
+
+          <div class="example_out">
+            <h3>Example</h3>
+            <div class="example_inner">
+              &lt;script src="myScript1.js"&gt;&lt;/script&gt;
+            </div>
+              <br>
+            </div><br>
+
+            <p class="note">You can read more about file paths in the chapter HTML File Paths.</p>
+
+      <br><br>
+
+    <footer>
+      <div>
+          <p>Copyright 2020. Seoungmin-Shim, Jiheon-Lee, Sungwon-Choi. All rights reserved.</p>
+      </div>
+    </footer>
+
+
+  </body>
+</html>

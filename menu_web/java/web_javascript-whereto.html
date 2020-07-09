@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html>
+
+  <head>
+    <title>web-contents</title>
+
+    <link rel="stylesheet" type="text/css" href="../../css/contents.css">
+
+  </head>
+
+  <body>
+
+    <header>
+      <p><h1>JavaScript-Where To</h1><p>
+    </header>
+
+    <br><hr><br>
+
+    <section>
+      <p class="strapline">The &lt;script&gt; Tag</p>
+      In HTML, JavaScript code is inserted between &lt;script&gt; and &lt;/script&gt; tags.
+      <div class="example_out">
+        <h3>Example</h3>
+        <div class="example_inner">
+            &lt;body&gt;<br>
+            <br>
+            &lt;h2&gt;JavaScript in Body&lt;/h2&gt;
+            <br>
+            &lt;p id="demo"&gt;&lt;/p&gt;
+            <br>
+            &lt;script&gt;<br>
+              document.getElementById("demo").innerHTML = "My First JavaScript";<br>
+            &lt;/script&gt;<br>
+            <br>
+          &lt;/body&gt;<br>
+        </div>
+          <br>
+        </div><br>
+        <p class="note">
+          Old JavaScript examples may use a type attribute:  &lt;script type="text/javascript"&gt;.<br>
+          The type attribute is not required. JavaScript is the default scripting language in HTML.</p>
+      </section>
+
+      <br><hr><br>
+
+      <section>
+        <p class="strapline">JavaScript Functions and Events</p>
+        A JavaScript function is a block of JavaScript code, that can be executed when "called" for.<br>
+        For example, a function can be called when an event occurs, like when the user clicks a button.
+        <p class="note">You will learn much more about functions and events in later chapters.</p>
+      </section>
+
+      <br><hr><br>
+
+      <section>
+        <p class="strapline">JavaScript in &lt;head&gt; or &lt;body&gt;</p>
+        You can place any number of scripts in an HTML document.
+        Scripts can be placed in the &lt;head&gt;, or in the &lt;body&gt; section of an HTML page, or in both.
+
+        <p class="strapline">JavaScript in &lt;head&gt;</p>
+        In this example, a JavaScript function is placed in the &lt;head&gt; section of an HTML page.<br>
+        The function is invoked (called) when a button is clicked:
+        <div class="example_out">
+          <h3>Example</h3>
+          <div class="example_inner">
+            &lt;head&gt;<br>
+              &lt;script&gt;<br>
+              function myFunction() {<br>
+                document.getElementById("demo").innerHTML = "Paragraph changed.";<br>
+              }<br>
+              &lt;/script&gt;<br>
+            &lt;/head&gt;<br>
+            &lt;body&gt;<br>
+            <br>
+              &lt;h1&gt;A Web Page&lt;/h1&gt;<br>
+              &lt;p id="demo"&gt;A Paragraph&lt;/p&gt;<br>
+              &lt;button type="button" onclick="myFunction()"&gt;Try it&lt;/button&gt;<br>
+              <br>
+            &lt;/body&gt;
+          </div>
+            <br>
+          </div><br>
+
+          <p class="strapline">JavaScript in &lt;body&gt;</p>
+          In this example, a JavaScript function is placed in the &lt;body&gt; section of an HTML page.
+          The function is invoked (called) when a button is clicked:
+          <div class="example_out">
+            <h3>Example</h3>
+            <div class="example_inner">
+              &lt;body&gt;<br>
+              <br>
+                &lt;h1&gt;A Web Page&lt;/h1&gt;<br>
+                &lt;p id="demo"&gt;A Paragraph&lt;/p&gt;<br>
+                &lt;button type="button" onclick="myFunction()"&gt;Try it&lt;/button&gt;<br>
+              <br>
+              &lt;script&gt;<br>
+              function myFunction() {<br>
+                document.getElementById("demo").innerHTML = "Paragraph changed.";<br>
+              }<br>
+              &lt;/script&gt;<br>
+              <br>
+              &lt;/body&gt;
+            </div>
+              <br>
+            </div><br>
+      </section>
+
+      <br><br>
+
+    <footer>
+      <div>
+          <p>Copyright 2020. Seoungmin-Shim, Jiheon-Lee, Sungwon-Choi. All rights reserved.</p>
+      </div>
+    </footer>
+
+
+  </body>
+</html>

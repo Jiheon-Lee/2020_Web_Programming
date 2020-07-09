@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+
+  <head>
+    <title>web-contents</title>
+
+    <link rel="stylesheet" type="text/css" href="../../css/contents.css">
+  </head>
+
+  <body>
+
+    <header>
+      <p><h1>HTML-The id Attribute</h1><p>
+    </header>
+
+    <br><hr><br>
+
+    <section>
+      <p style="text-align: center;">The HTML id attribute is used to specify a unique id for an HTML element.</p>
+    </section>
+
+    <br><hr><br>
+
+    <section>
+      <p class="strapline">Using The id Attribute</p>
+      SThe HTML id attribute specifies a unique id for an HTML element. The value of the id attribute must be unique within the HTML document.<br>
+      The id attribute is used to point to a specific style declaration in a style sheet. It is also used by JavaScript to access and manipulate the element with the specific id.<br>
+      In the following example we have an &lt;h1&gt; element that points to the id name "myHeader". The &lt;h1&gt; element will be styled according to the #myHeader style definition in the head section:
+
+      <div class="example_out">
+        <h3>Example</h3>
+        <div class="example_inner">
+          &lt;head&gt;<br>
+            &lt;style&gt;<br>
+              #header{
+                background-color: lightblue;<br>
+                color: black;<br>
+                padding: 40px;<br>
+                text-align: center;<br>
+              }<br>
+            &lt;/style&gt;<br>
+            &lt;/head&gt;<br>
+            <br>
+            &lt;body&gt;<br>
+            <br>
+              &lt;h1 id="header"&gt;Heading 1&lt;/h1&gt;<br>
+            <br>
+            &lt;/body&gt;<br>
+      </div>
+        <br>
+      </div><br>
+      <p class="note"><strong>TIP</strong>:The id attribute can be used on any HTML element.<br>
+        <strong>NOTE</strong>:The id value is case-sensitive.<br>
+        <strong>NOTE</strong>: The id value must contain at least one character, and must not contain whitespace (spaces, tabs, etc.).<p>
+    </section>
+
+    <br><hr><br>
+
+    <section>
+      <p class="strapline">Bookmarks with ID and Links</p>
+      HTML bookmarks are used to allow readers to jump to specific parts of a Web page.<br>
+      Bookmarks can be useful if your webpage is very long.<br>
+      To make a bookmark, you must first create the bookmark, and then add a link to it.<br>
+      When the link is clicked, the page will scroll to the location with the bookmark.
+
+      <p class="strapline">Example</p>
+      First, create a bookmark with the id attribute:
+      <div class="example_out">
+        <h3>Example</h3>
+        <div class="example_inner">
+          &lt;h2 id="c1"&gt;capter 1&lt;/h2&gt;
+        </div>
+        <br>
+        </div><br>
+      Then, add a link to the bookmark ("Jump to Chapter 4"), from within the same page:
+      <div class="example_out">
+        <h3>Example</h3>
+        <div class="example_inner">
+          &lt;a href="#C4"&gt;Jump to Chapter 4&lt;/a&gt;
+        </div>
+        <br>
+        </div><br>
+      Or, add a link to the bookmark ("Jump to Chapter 4"), from another page:
+      <div class="example_out">
+        <h3>Example</h3>
+        <div class="example_inner">
+          &lt;a href="html_demo.html#C4"&gt;Jump to Chapter 4&lt;/a&gt;
+        </div>
+        <br>
+        </div><br>
+
+    <br><br>
+
+    <footer>
+      <div>
+          <p>Copyright 2020. Seoungmin-Shim, Jiheon-Lee, Sungwon-Choi. All rights reserved.</p>
+      </div>
+    </footer>
+
+
+  </body>
+</html>
